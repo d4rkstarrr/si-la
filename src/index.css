@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-[#e9edf2] text-black overflow-x-hidden;
+  }
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-primary opacity-75 hover:opacity-100 transition-opacity !important;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-primary opacity-50 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply opacity-100 !important;
+}
+
+/* Smooth transitions */
+@layer utilities {
+  .transition-transform {
+    @apply transform transition-all duration-300 ease-in-out;
+  }
+}
+
+/* Container utilities */
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Add scroll-margin-top to sections to prevent them from being hidden by the navbar */
+section {
+  @apply scroll-mt-24; /* Increased scroll-margin-top to ensure the section header is fully visible */
+}
