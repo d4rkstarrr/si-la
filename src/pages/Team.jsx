@@ -61,11 +61,11 @@ const Team = () => (
       {team.map((member, idx) => (
         <SwiperSlide key={idx}>
           <div className="bg-card-bg rounded-xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform">
-            <img 
+            {/* <img 
               src={member.image} 
               alt={member.name} 
               className="w-full h-48 object-cover rounded-lg mb-4"
-            />
+            /> */}
             <h3 className="text-xl font-semibold text-primary mb-2 text-center">{member.name}</h3>
             <p className="text-accent font-medium mb-2 text-center">{member.role}</p>
             <p className="text-text text-sm text-center">{member.bio}</p>

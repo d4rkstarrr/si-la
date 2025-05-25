@@ -59,7 +59,7 @@ const Projects = () => (
       {projects.map((project, idx) => (
         <SwiperSlide key={idx}>
           <div className="bg-card-bg rounded-xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform">
-            <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-lg mb-4" />
+            {/* <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-lg mb-4" /> */}
             <h3 className="text-xl font-semibold text-primary mb-2 text-center">{project.title}</h3>
             <p className="text-text text-center">{project.description}</p>
           </div>

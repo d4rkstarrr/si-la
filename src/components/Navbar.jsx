@@ -30,11 +30,11 @@ const Navbar = () => (
             Team
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#clients" className="text-gray-600 hover:text-primary px-2 py-1 text-sm md:text-base font-medium transition-colors duration-200 hover:scale-105 inline-block">
             Clients
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact" className="bg-primary text-white px-4 py-2 rounded-lg text-sm md:text-base font-medium hover:bg-primary/90 transition-colors duration-200 hover:scale-105 inline-block">
             Contact
